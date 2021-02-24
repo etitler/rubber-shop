@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="./images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Web site to demo express & stripe"
+        />
+        <link rel="stylesheet" href="./stylesheets/style.css"/>
+        <link rel="stylesheet" href="./stylesheets/payment.css"/>
+        <title>Shop</title>
+    </head>
+    <body>
+        <header class='Header'>
+            <a class="App-link" href="/" rel="noopener noreferrer">
+                Home
+            </a>
+            <a class="App-link" href="/shop.html" rel="noopener noreferrer">
+                Shop
+            </a>
+            <a class="App-link" href="/checkout.html" rel="noopener noreferrer">
+                Checkout
+            </a>
+        </header>
+        <main class='flex'>
+            <div class='col'>
+                <div class="App">
+                    <img src='./images/logo.svg' class="App-logo" alt="logo" />
+                    <p>TODO:</p>
+                    <ul class="todo-items">
+                        <li>Render Cart items</li>
+                        <li>Render itemized receipt</li>
+                        <li>Style payment form</li>
+                        <li>Add shipping address to form?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='col'>
+                <div>
+                    <div class=''>
+                        <img src='./images/logo.svg' class="App-logo" alt="logo" />
+                    </div>
+                </div>
+                <form id="payment-form">
+                    <div id="card-element"><!-- placeholder for Elements --></div>
+                    <button id="card-button">Submit Payment</button>
+                    <p id="payment-result"><!-- we'll pass the response from the server here --></p>
+                </form>
+            </div>
+        </main>
+    </body>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./javascripts/checkout.js"></script>
+</html>
